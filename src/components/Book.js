@@ -1,10 +1,10 @@
-export default function Book() {
+export default function Book(props) {
   return (
     <div>
       <div>
-        <h6>Category Name</h6>
-        <h3>Book Name</h3>
-        <p>Books's writer Name</p>
+        <h6>{props.book.category}</h6>
+        <h3>{props.book.title}</h3>
+        <p>{props.book.writer}</p>
       </div>
       <div>
           <ul>

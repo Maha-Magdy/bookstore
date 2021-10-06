@@ -4,8 +4,8 @@ export default function AddNewBookForm() {
       <h3>ADD NEW BOOK</h3>
       <form>
         <input type="text" placeholder="Book title"></input>
-        <select name="category">
-          <option value="" disabled selected hidden>
+        <select name="category" defaultValue="">
+          <option value="" disabled hidden>
             Category
           </option>
         </select>

@@ -2,8 +2,14 @@
 
 import Book from './Book.js';
 
-export default function BooksList() {
+export default function BooksList(props) {
   return (
-    <Book />
+    <ul>
+      {props.books.map((book) => (
+          <li key="{book.id}">
+            <Book book={book} />
+          </li>
+      ))}
+    </ul>
   );
 }
