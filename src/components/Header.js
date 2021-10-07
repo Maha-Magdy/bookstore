@@ -1,18 +1,18 @@
 /* eslint-disable no-unused-vars */
-
 import { Link } from 'react-router-dom';
+import styles from './Header.module.css';
 
 function Header() {
   return (
-    <header>
-      <h1>Bookstore</h1>
+    <header className={styles.panel_bg}>
+      <h1 className='blue_color'>Bookstore</h1>
       <nav>
-        <ul>
+        <ul className='d-flex'>
           <li>
-              <Link to='/'>BOOKS</Link>
+              <Link to='/' className='grey_color'>BOOKS</Link>
               </li>
           <li>
-              <Link to='/Categories'>CATEGORIES</Link>
+              <Link to='/Categories' className='grey_color'>CATEGORIES</Link>
               </li>
         </ul>
       </nav>
