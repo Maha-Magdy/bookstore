@@ -1,12 +1,35 @@
-/* eslint-disable no-unused-vars */
-
-import { configureStore } from '@reduxjs/toolkit';
-import React from 'react';
+/* eslint-disable import/no-duplicates, no-unused-vars */
+import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import Book from './Book.js';
+import { bookList } from '../redux/books/books.js';
 
 function BooksList(props) {
+  const dispatch = useDispatch();
   const { books } = props;
+
+  useEffect(() => {
+    axios
+      .get(
+        'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/U8XOHA6UCsUfkm4CP6xw/books',
+      )
+      .then((res) => {
+        const { data } = res;
+        const tempArray = Object.keys(data);
+        const finalResult = tempArray.map((key) => {
+          const { title } = data[key][0];
+          const { category } = data[key][0];
+          return {
+            id: key,
+            title,
+            category,
+          };
+        });
+        dispatch(bookList(finalResult));
+      });
+  }, []);
 
   if (books !== []) {
     return (

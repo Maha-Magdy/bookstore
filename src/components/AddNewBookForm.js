@@ -2,28 +2,28 @@
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { useState } from 'react';
-import { addBook } from '../redux/books/books.js';
+import { addBookAPI } from '../redux/books/books.js';
 
 export default function AddNewBookForm() {
   const [title, setTitle] = useState('');
-  const [author, SetAuthor] = useState('');
+  const [category, SetCategory] = useState('');
 
   const dispatch = useDispatch();
 
   const submitBookToStore = (e) => {
-    if (title.trim() && author.trim()) {
+    if (title.trim() && category.trim()) {
       e.preventDefault();
 
       const newBook = {
         id: uuidv4(),
         title,
-        author,
+        category,
       };
 
-      dispatch(addBook(newBook));
+      dispatch(addBookAPI(newBook));
 
       setTitle('');
-      SetAuthor('');
+      SetCategory('');
     }
   };
 
@@ -42,11 +42,11 @@ export default function AddNewBookForm() {
 
         <input
           type="text"
-          placeholder="Book author"
-          name="author"
-          value={author}
+          placeholder="Book category"
+          name="category"
+          value={category}
           required="required"
-          onChange={(e) => SetAuthor(e.target.value)}
+          onChange={(e) => SetCategory(e.target.value)}
         ></input>
 
         <button onClick={submitBookToStore}>ADD BOOK</button>

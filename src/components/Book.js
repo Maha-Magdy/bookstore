@@ -1,11 +1,11 @@
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books.js';
+import { removeBookAPI } from '../redux/books/books.js';
 
 export default function Book(props) {
   const dispatch = useDispatch();
 
   const removeThisBook = () => {
-    dispatch(removeBook(props.book.id));
+    dispatch(removeBookAPI(props.book.id));
   };
 
   return (
