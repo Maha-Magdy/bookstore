@@ -19,15 +19,15 @@ li.bookBlock button {
 }
 
 li.book_option {
-    margin: 1em 0 0;
-    padding: 0 1em;
-    border-right: 1px solid #e8e8e8;
+  margin: 1em 0 0;
+  padding: 0 1em;
+  border-right: 1px solid #e8e8e8;
 }
 
 li.book_option:first-child {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 li.book_option:last-child {
-    border-right: none;
+  border-right: none;
 }
