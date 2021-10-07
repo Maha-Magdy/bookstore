@@ -33,7 +33,7 @@ git clone https://github.com/Maha-Magdy/bookstore.git
 
 2. Now that you have already cloned the repo run the following commands to get the project up and running:
 ```sh
-cd math-magicians
+cd bookstore
 npm install
 npm start
 ```
