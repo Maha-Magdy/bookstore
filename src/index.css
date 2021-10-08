@@ -36,14 +36,6 @@ button {
   cursor: pointer;
 }
 
-::-webkit-input-placeholder { /* Edge */
-  color: #e8e8e8;
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #e8e8e8;
-}
-
 ::placeholder {
   color: #e8e8e8;
 }
@@ -53,8 +45,16 @@ button {
   color: #0290ff;
 }
 
+.pale_blue_color {
+  color: #4386bf;
+}
+
 .grey_color {
   color: #949494;
+}
+
+.pale_grey_color {
+  color: #e8e8e8;
 }
 
 .black_color {
