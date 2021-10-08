@@ -4,6 +4,9 @@ import { v4 as uuidv4 } from 'uuid';
 import { useState } from 'react';
 import { addBookAPI } from '../redux/books/books.js';
 
+// stylesheet
+import './AddNewBookForm.css';
+
 export default function AddNewBookForm() {
   const [title, setTitle] = useState('');
   const [category, SetCategory] = useState('');
@@ -28,8 +31,8 @@ export default function AddNewBookForm() {
   };
 
   return (
-    <div>
-      <h3>ADD NEW BOOK</h3>
+    <div className="AddNewBookForm">
+      <h3 className="margin-0 grey_color">ADD NEW BOOK</h3>
       <form>
         <input
           type="text"

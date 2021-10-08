@@ -1,0 +1,80 @@
+ul.booksBlock {
+  margin: 0 0 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+ul li.bookBlock {
+  margin: 0;
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 2.5em 1em;
+}
+
+ul li.bookBlock > div {
+  display: flex;
+  align-items: center;
+}
+
+.right_block button {
+  background-color: #0290ff !important;
+  color: white;
+  padding: 0.5em 2em;
+  border-radius: 4px;
+}
+
+li.bookBlock button {
+  background: unset;
+  border: unset;
+}
+
+li.book_option {
+  margin: 1em 0 0;
+  padding: 0 1em;
+  border-right: 1px solid #e8e8e8;
+}
+
+li.book_option:first-child {
+  padding-left: 0;
+}
+
+li.book_option:last-child {
+  border-right: none;
+}
+
+.left_block {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+  padding-right: 2em;
+  align-items: center;
+  border-right: 1px solid #e8e8e8;
+}
+
+.right_block {
+  padding: 0 2em;
+}
+
+.right_block p:nth-child(2) {
+  margin-top: 0;
+}
+
+.progress_block {
+  display: flex;
+  align-items: center;
+}
+
+.progress_block > div:last-child {
+  margin-left: 2em;
+}
+
+.progress_block > div:last-child p {
+  margin: 0;
+}
+
+.progress_block > div:last-child > p:first-child {
+  text-align: center;
+  font-size: xx-large;
+}

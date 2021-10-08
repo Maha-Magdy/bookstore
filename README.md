@@ -2,11 +2,14 @@
 
 ## About
 
-A "Bookstore" is a library app for books that can be added, edited, or deleted. It is a Single Page App (SPA).
+A "Bookstore" is a library app for books that can be added, edited, or deleted. It is a Single Page App (SPA). This application was built with React and Redux.
+
+![screenshot](app_screenshot.png)
 ## Built With
 
 - HTML, CSS, JavaScript.
 - React.
+- Redux
 - VisualStudio Code, Git, & GitHub.
 
 <!-- ## Live Demo
@@ -30,7 +33,7 @@ git clone https://github.com/Maha-Magdy/bookstore.git
 
 2. Now that you have already cloned the repo run the following commands to get the project up and running:
 ```sh
-cd math-magicians
+cd bookstore
 npm install
 npm start
 ```

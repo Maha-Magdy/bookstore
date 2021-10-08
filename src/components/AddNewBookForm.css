@@ -1,0 +1,38 @@
+div.AddNewBookForm {
+  margin: 0 0 10em;
+}
+
+div.AddNewBookForm h3 {
+  margin-bottom: 1em;
+}
+
+div.AddNewBookForm form {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.AddNewBookForm input {
+  padding: 0.5em 1em;
+  background-color: white;
+  border: 1px solid #e8e8e8;
+}
+
+div.AddNewBookForm input:focus-visible {
+  outline-color: #949494;
+}
+
+div.AddNewBookForm input:first-child {
+  width: 50%;
+}
+
+div.AddNewBookForm input:nth-child(2) {
+  width: 20%;
+}
+
+div.AddNewBookForm button {
+  background-color: #0290ff;
+  color: white;
+  border: unset;
+  padding: 0 3em;
+  font-weight: bold;
+}

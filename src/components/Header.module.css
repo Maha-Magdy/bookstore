@@ -1,0 +1,43 @@
+.panel_bg {
+  margin: 0 0 2.375rem;
+  padding: 0 6em;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel_bg > div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin: 0 0 0 2em;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0 2em;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.profileIcon {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #e8e8e8;
+  border-radius: 50%;
+  position: relative;
+}
+
+.profileIcon svg {
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
